@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <style>
+        body {
+            background-size: cover;
+            background-repeat:repeat-x,repeat-y;
+            background-attachment: fixed;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+            background-image:url('https://img.freepik.com/free-vector/vector-grunge-color-texture_2065-554.jpg?t=st=1725682135~exp=1725685735~hmac=f9aaccdcc48584263dfdfcfe3a3df85623599707e5ddfb87b0445a803ed0b69d&w=740')
+        }
+        form{
+            background: rgba(100, 124, 182, 0.914);
+            padding: 10
+            px;
+            max-width: 650px;
+            margin: 100px auto;
+            border-radius: 15px;
+
+        }
+        h1{
+            text-align: center;
+            font-size: 2.5em;
+            color: #0a16f5;
+
+        }
+        label{
+            display: block;
+            margin-top: 5px;
+            font-weight: bold;
+
+        }
+    input,textarea,button{
+        width: calc(100%-22px);
+        padding: 15px;
+        border: 3px solid #ccc;
+        border-radius: 5px;
+    }
+    button{
+        background-color: #28a745;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 23px;
+    }
+    button:hover{
+        background-color: rgb(24, 149, 7);
+
+    }
+
+    </style>
+    <meta charset="UTF-8"> 
+    <title>Feedback form</title>
+</head>
+<body>
+    <h1>CoderOne Feedback System Form</h1>
+    <form action="/submit-feedback"method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+        <br><br>
+        <label for="contactNumber">Contact Number:</label>
+        <input type="text" id="contactNumber" name="contactNumber">
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <br><br>
+        <label for="message">your message:</label>
+        <textarea name="message" id="message"></textarea>
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
